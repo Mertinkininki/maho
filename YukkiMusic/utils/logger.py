@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from config import LOG, LOG_GROUP_ID
 from YukkiMusic import app
 from YukkiMusic.utils.database import is_on_off
@@ -17,19 +8,19 @@ async def play_logs(message, streamtype):
         if message.chat.username:
             chatusername = f"@{message.chat.username}"
         else:
-            chatusername = "Private Group"
+            chatusername = "Gizli Grubta"
         logger_text = f"""
-**YUKKI PLAY LOG**
+**Log Bilgi**
 
-**Chat:** {message.chat.title} [`{message.chat.id}`]
-**User:** {message.from_user.mention}
-**Username:** @{message.from_user.username}
-**User ID:** `{message.from_user.id}`
-**Chat Link:** {chatusername}
+**Sohbeti:** {message.chat.title} [`{message.chat.id}`]
+**Kullanıcı:** {message.from_user.mention}
+**Kullanıcı adı:** @{message.from_user.username}
+**Kullanıcı Kimliği :** `{message.from_user.id}`
+**Sohbet linki:** {chatusername}
 
-**Query:** {message.text}
+**Sorgu:** {message.text}
 
-**StreamType:** {streamtype}"""
+**Akış Türü:** {streamtype}"""
         if message.chat.id != LOG_GROUP_ID:
             try:
                 await app.send_message(
