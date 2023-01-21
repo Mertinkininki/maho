@@ -10,14 +10,14 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH", "")
+API_ID = int(getenv("API_ID", "23362090"))
+API_HASH = getenv("API_HASH", "decd9452bcf8725e16f76ec7be08747e")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "")
+BOT_TOKEN = getenv("BOT_TOKEN", "5740286660:AAFflOd7aL2a0kT3QFlNSQIEFvYlRWV540s")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", "")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://cluster0:kala276@cluster0.utwmz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
@@ -30,14 +30,14 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-10001710974687"))
 
 # A name for your Music bot.
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", ""NedtMusicBot)
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "920841209").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -49,7 +49,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Burayısil/Nedt",
+    "https://github.com/Mertinkininki/nedt",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -131,7 +131,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", "")
+STRING1 = getenv("STRING_SESSION", "BADFPGLF8IuKseC87wbsOk2WQj7L6rrrX5ISFnAlyMhER6qFbFG0ScaKWXBgrv0OFkWGyBHJHMIO29bB6cTyQj8OLuxVdItonYN_zpdT6vvTKs9MmrWpbMRtJ6GfqhSfmgOCcHKrQtO90-9iifeK0I0uAdvHi-9WxVvGU2TrmgTChNluozkmFODA_lGujacrE-t7i08AwU75Yf4Te9rRZx6mhwh6z1G3XPG9IxigdX_ZllgcsGOs-UunPrFQYJJZSd_Rl5z02kIT0A6ugy28RCl83j0gLz_2HiPv7TqCwTWOzBOwqRCFcdNOVhW_Hk2OVy7Erp2YlYOCptx3c7VF6rD-NuLr-QA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
